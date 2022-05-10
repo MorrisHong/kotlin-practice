@@ -9,9 +9,11 @@ fun main(args: Array<String>) {
 
     println("Call blockBody : " + blockBody(null))
     println("Call expressionBody : " + expressionBody("morris"))
+    println("Call temp.tempMethod() : " + Temp().tempMethod())
 }
 
 fun blockBody(name: String?): String {
+    println(Temp().tempMethod())
     return if (name == "morris") "홍은모" else "누구야"
 }
 
@@ -20,7 +22,7 @@ fun expressionBody(name: String) = if (name == "morris") "홍은모" else "누�
 
 fun test() = if(true) "" else 123
 
-class temp {
-    fun tempMethod() = expressionBody("morris")
+class Temp {
+    fun tempMethod() = "abc"
 
 }

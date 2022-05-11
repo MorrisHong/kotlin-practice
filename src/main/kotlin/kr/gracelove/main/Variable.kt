@@ -9,4 +9,6 @@ fun main(args: Array<String>) {
 
 
     val immutableString:String
+
+    val temp = 2.19
 }

@@ -8,6 +8,7 @@ fun main(args: Array<String>) {
     println("Program arguments: ${args.joinToString()}")
 
     val list = listOf("1", "2")
+    val string = "asdsad"
 
     println("Call blockBody : " + blockBody(null))
     println("Call expressionBody : " + expressionBody("morris"))

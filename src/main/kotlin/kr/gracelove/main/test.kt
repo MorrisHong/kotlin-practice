@@ -6,8 +6,8 @@ fun main() {
 //    println(peoples)
 
     val test = Meemememememe()
-    val array = arrayOf("test", "morris")
-    test.test(array)
+    val array = arrayOf("morris", "graceLove")
+    test.templateString(array)
 
 }
 
@@ -25,11 +25,19 @@ class Meemememememe {
         return name + callback(c, d)
     }
 
-    fun test(args: Array<String>) {
+    fun templateString(args: Array<String>) {
         val name = if (args.size > 0) args[0] else "Kotlin"
         println("Hello $name")
         println("Hello ${args[0]}")
+
+        println(
+            "Hello ${
+                if (args[0].equals("morris")) {
+                    "updatedMorris"
+                } else {
+                    "updatedGraceLove"
+                }
+            }"
+        )
     }
-
-
 }

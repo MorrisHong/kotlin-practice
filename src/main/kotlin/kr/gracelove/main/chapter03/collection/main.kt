@@ -2,8 +2,11 @@ package kr.gracelove.main.chapter03.collection
 
 fun main() {
     map()
+    println()
     list()
+    println()
     set()
+    println()
 }
 
 fun map() {
@@ -24,6 +27,7 @@ fun list() {
     val arrayListOf = arrayListOf(53, 1, 9)
     println("arrayListOf.javaClass : ${arrayListOf.javaClass}")
     println("arrayListOf : $arrayListOf")
+    arrayListOf.add(22)
 }
 
 fun set() {

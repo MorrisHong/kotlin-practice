@@ -14,8 +14,6 @@ class Person(
 
 class T {
     val name: String
-        get() {
-            TODO()
-        }
+        get() = "sad"
 }
 

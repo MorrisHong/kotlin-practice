@@ -17,10 +17,12 @@ fun main() {
     println(
         """
         joinToString with default value : 
-        ${joinToString(
-                collection = list, 
+        ${
+            joinToString(
+                collection = list,
                 prefix = "#",
-            )}
+            )
+        }
         """
     )
 
@@ -43,3 +45,5 @@ fun <T> joinToString(
     result.append(postfix)
     return result.toString()
 }
+
+fun String.lastChar(): Char = this.get(this.length - 1)

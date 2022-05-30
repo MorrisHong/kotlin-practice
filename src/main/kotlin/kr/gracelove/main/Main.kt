@@ -1,5 +1,7 @@
 package kr.gracelove.main
 
+import kr.gracelove.main.chapter03.collection.lastChar
+
 fun main(args: Array<String>) {
     println("Hello World!")
 
@@ -13,6 +15,8 @@ fun main(args: Array<String>) {
     println("Call blockBody : " + blockBody(null))
     println("Call expressionBody : " + expressionBody("morris"))
     println("Call temp.tempMethod() : " + Temp().tempMethod())
+
+    println("홍은모".lastChar())
 }
 
 fun blockBody(name: String?): String {

@@ -17,6 +17,11 @@ fun main(args: Array<String>) {
     println("Call temp.tempMethod() : " + Temp().tempMethod())
 
     println("홍은모".lastChar())
+    tttt(null)
+}
+
+fun tttt(name: String?) {
+    println(name?.lastChar())
 }
 
 fun blockBody(name: String?): String {

@@ -1,21 +1,21 @@
 package kr.gracelove.main.chapter03.user
 
-
-
 fun saveUser(user: User) {
+    user.validateBeforeSave()
+    println("SUCCEED!")
+}
 
+fun User.validateBeforeSave() {
     fun validate(
         value: String,
         fieldName: String,
     ) {
         if (value.isEmpty()) {
             throw IllegalArgumentException(
-                "Can't save user ${user.id}: empty $fieldName"
+                "Can't save user ${this.id}: empty $fieldName"
             )
         }
     }
-
-    validate(user.name, "Name")
-    validate(user.address, "Address")
-    println("SUCCEED!")
+    validate(this.name, "Name")
+    validate(this.address, "Address")
 }

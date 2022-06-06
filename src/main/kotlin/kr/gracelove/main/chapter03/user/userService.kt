@@ -5,7 +5,6 @@ package kr.gracelove.main.chapter03.user
 fun saveUser(user: User) {
 
     fun validate(
-        user: User,
         value: String,
         fieldName: String,
     ) {
@@ -16,5 +15,7 @@ fun saveUser(user: User) {
         }
     }
 
+    validate(user.name, "Name")
+    validate(user.address, "Address")
     println("SUCCEED!")
 }

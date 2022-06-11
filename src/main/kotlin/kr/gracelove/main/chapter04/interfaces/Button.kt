@@ -6,7 +6,8 @@ class Button : Clickable {
 
 
 internal fun main() {
-
+    val of = setOf("1", "2", "3")
+    print(of.javaClass)
 }
 
 open class A {

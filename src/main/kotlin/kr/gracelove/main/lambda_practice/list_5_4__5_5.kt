@@ -6,6 +6,9 @@ fun main() {
         Person("Bob", 31)
     )
 
-    println(people.maxByOrNull { it.age })
-    println(people.maxByOrNull(Person::age))
+    people.maxByOrNull({ person -> person.age })
+    people.maxByOrNull { person -> person.age }
+    people.maxByOrNull { it.age }
+    people.maxByOrNull(Person::age)
+//    people.maxByOrNull({Person::age}
 }
